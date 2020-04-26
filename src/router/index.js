@@ -4,6 +4,7 @@ import Login from '../components/Login'
 import home from '../components/Home'
 import send from '../components/websockert'
 import register from '../components/register'
+import jia from '../components/jiaju/Index'
 Vue.use(Router)
 
 export default new Router({
@@ -12,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Login',
-      component: Login
+      name: 'jia',
+      component: jia
     },
     {
       path: '/home',
@@ -29,6 +30,11 @@ export default new Router({
       path: '/send',
       name: 'send',
       component: send
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
   ]
 })
